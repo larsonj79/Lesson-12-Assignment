@@ -10,4 +10,4 @@ apt-get install -y r-base
 Rscript -e "install.packages('gradeR')" 
 Rscript -e "install.packages('ggplot2')" 
 Rscript -e "install.packages('dplyr')" 
-Rscript -e "install.packages('readxl')" 
+Rscript -e "install.packages('readr')" 

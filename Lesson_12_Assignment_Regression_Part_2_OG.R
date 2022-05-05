@@ -28,10 +28,11 @@ fexppredict <- read_csv("fexppredict.csv")
 # descending order. Call the report top10sales.
 
 
-#2. Examine whether advertising amounts are predictive of sales. Run a regression model 
-# predicting sales (WebSales) from all four advertising channels (Google Prospecting - 
-# GP, Google Retargeting - GR, Facebook Prospecting - FP, Facebook Retargeting - FR). 
-# Save the regression model as mod1. Output the summary report from this model.
+#2. Examine whether advertising amounts are predictive of sales. With the fexppre data,
+# run a regression model predicting sales (WebSales) from all four advertising channels 
+# (Google Prospecting - GP, Google Retargeting - GR, Facebook Prospecting - FP, 
+# Facebook Retargeting - FR). Save the regression model as mod1. Output the summary 
+# report from this model.
 
 
 #3. Interpret the coefficient for GR (Google Retargeting).
@@ -194,12 +195,12 @@ fexppredict <- read_csv("fexppredict.csv")
 # dataset. AOV is WebSales / WebOrders. 
 
 
-#26. Conduct a regression model predicting WebOrders from the four 
+#26. Conduct a regression model (mod5) predicting WebOrders from the four 
 # advertising channels. Output the summary report.
 
 
-#27. Conduct a regression model predicting AOV from the four advertising 
-# channels. Output the summary report.
+#27. Conduct a regression model (mod6) predicting AOV from the four 
+# advertising channels. Output the summary report.
 
 
 #28. Based on these last two models, which is the pathway by which 
@@ -215,7 +216,7 @@ fexppredict <- read_csv("fexppredict.csv")
 
 #29. Run a regression model predicting WebOrders from the four 
 # advertising channels as well as (1) the interaction between GP and GR 
-# and (2) the interaction between FP and FR. Save the model as mod5. 
+# and (2) the interaction between FP and FR. Save the model as mod7. 
 # Show the summary report.
 
 
@@ -228,10 +229,9 @@ fexppredict <- read_csv("fexppredict.csv")
 # advertising budget. It can increase Google Prospecting by 20%, Google 
 # Retargeting by 20% or both by 20%. 
 
-#31. What is the expected percentage increase in sales that is likely to 
-# result from each possible increase? Apply your last regression model 
-# to the *fexppredict* dataframe to find the predicted sales. Save the 
-# predicted sales amounts as predsales.
+#31. Apply your last regression model to the *fexppredict* dataframe 
+# to find the predicted sales. Save the predicted sales amounts as 
+# predsales.
 
 
 # **EXTRA CREDIT** *OPTIONAL*
@@ -243,4 +243,6 @@ fexppredict <- read_csv("fexppredict.csv")
 # and 1.3). Assuming the last regression model is correct and 
 # statistically significant, find the optimal increase across GP and GR
 # to produce the highest level of sales. (Assume FP and FR remain at 1.)
-# *ENTER ANSWER HERE*
+# Save your chosen values as admaxsales. (Start by saving admaxsales as
+# the first row of fexppredict. Then change the amounts of GP and GR.)
+
